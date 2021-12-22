@@ -2,25 +2,33 @@
 <head>
 
     <title>COVID-19 Circuit Breaker Dashboard</title>
-    <link rel="stylesheet" href="./index2.css">
+    <link rel="stylesheet" href="./index.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/0b43163dfc.js"></script>
 
     <script type="text/javascript"
 	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    
     <script type="text/javascript"></script>
 
 </head>
 
+
 <body>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Export As
+      <i style="margin-left: 5px;" class="fa fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+    <div id = "exportImage">Image</div>
+    <div id = "exportPDF">PDF</div>
+    </div>
+  </div>
+
 
   <div id="vizContainer" class="dashboard-container"></div>
-
-  <div class="export-btns-container">
-    <span>Export As: </span>
-    <button id = "exportPDF" class="export-btn">PDF</button>
-    <button id = "exportImage" class="export-btn">Image</button>
-
-  </div>
 
   <script src="./app.js"></script>
 
