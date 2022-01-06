@@ -8,7 +8,7 @@ const url = "https://public.tableau.com/views/CircuitBreakerDashboard/Dashboard1
 const vizContainer = document.getElementById('vizContainer');
 const options = {
     hideTabs: true,
-    height: 1000,
+    height: 1600,
     width: 1200,
     onFirstInteraction: function() {
         workbook = viz.getWorkbook();
